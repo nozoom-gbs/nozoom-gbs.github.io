@@ -4,7 +4,7 @@
   </head>
   
   <body>
-    <form action="https://formspree.io/f/xnqlpnbq" method="POST" style="width: 400px">
+    <form action="https://formspree.io/f/xnqlpnbq" target="thing" method="POST" style="width: 400px">
       <label for="name">Name  </label>
       <input required type="text" id="name" name="contact-name"><br>
       
@@ -13,6 +13,8 @@
       <br>
       <button type="submit">Sign</button>
     </form>
+    
+    <iframe id="thing"></iframe>
   </body>
 </html>
 
@@ -29,5 +31,11 @@
     background-color: #141414;
     color: #eeeeee;
     font-family: Consolas;
+  }
+  
+  #thing
+  {
+    width: 0px;
+    height: 0px;
   }
 </style>
