@@ -11,7 +11,7 @@
       <label for="grade">Grade  </label>
       <input required type="number" id="grade" name="grade"><br>
       <br>
-      <button type="submit">Sign</button>
+      <button type="submit" onclick="a">Sign</button>
     </form>
     
     <iframe name="thing" id="thing"></iframe>
@@ -43,3 +43,10 @@
     visibility: hidden;
   }
 </style>
+
+<script>
+  function a()
+  {
+    document.body.innerHTML = "good work, you contributed to something <br><img src=\"https://i.imgur.com/fHgjDSl.png\"> take a lollipop";
+  }
+</script>
